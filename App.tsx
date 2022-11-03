@@ -37,6 +37,7 @@ class Task extends Realm.Object {
 }
 
 const {RealmProvider, useRealm, useQuery} = createRealmContext({
+  inMemory: true,
   schema: [Task],
 });
 
